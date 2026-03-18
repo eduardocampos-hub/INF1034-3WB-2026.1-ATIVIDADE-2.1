@@ -20,8 +20,8 @@ t.goto(250,200)
 t.pendown()
 
 # triangulo
-t.color("red") 
-t.fillcolor("red")  
+color1 = textinput("Obter cor", "digite sua cor de preferência") 
+t.fillcolor(color1)  
 t.begin_fill()
 for _ in range(3):
     t.forward(100) 
@@ -35,8 +35,9 @@ t.goto(-250,-200)
 t.pendown()
 
 # octagono
+color2 = textinput("Obter cor", "digite sua cor de preferência")
 t.color("orange")
-t.fillcolor("orange")
+t.fillcolor(color2)
 t.begin_fill()
 for _ in range(4):
     t.fd(100)
@@ -49,8 +50,8 @@ t.goto(250,-200)
 t.pendown()
 
 # trapezio
-t.color("purple")
-t.fillcolor("purple")
+color3 = textinput("Obter cor", "digite sua cor de preferência")
+t.fillcolor(color3)
 t.begin_fill()
 for _ in range(3):
     t.fd(100)
@@ -69,7 +70,7 @@ t.pendown()
 # diamante
 color4 = textinput("Obter cor", "digite sua cor de preferência")
 t.color("pink")
-t.fillcolor("color4")
+t.fillcolor(color4)
 t.begin_fill()
 for _ in range(4):
     t.fd(100)
